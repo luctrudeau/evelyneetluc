@@ -9762,17 +9762,3 @@ header.masthead h1 {
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
-/* Map */
-.map {
-height: 100%;
-}
-
-@media (max-width: 992px) {
-  .map {
-height: 75%;
-  }
-}
-
-.map iframe {
-  pointer-events: none;
-}
