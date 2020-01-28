@@ -108,19 +108,19 @@
     <div class="container-fluid">
       <div class="row no-gutters">
         <div class="col-lg-4 col-sm-6">
-          <img class="b-lazy img-fluid" src="img/047.jpg" alt="">
+        <img class="b-lazy img-fluid" src="img/loading.gif" data-src="img/047.jpg" alt="">
         </div>
         <div class="col-lg-4 col-sm-6">
-          <img class="b-lazy img-fluid" src="img/048.jpg" alt="">
+        <img class="b-lazy img-fluid" src="img/loading.gif" data-src="img/048.jpg" alt="">
         </div>
         <div class="col-lg-4 col-sm-6">
-          <img class="b-lazy img-fluid" src="img/049.jpg" alt="">
+        <img class="b-lazy img-fluid" src="img/loading.gif" data-src="img/049.jpg" alt="">
         </div>
         <div class="col-lg-6 col-sm-6">
-          <img class="b-lazy img-fluid" src="img/050.jpg" alt="">
+        <img class="b-lazy img-fluid" src="img/loading.gif" data-src="img/050.jpg" alt="">
         </div>
         <div class="col-lg-6 col-sm-6">
-          <img class="b-lazy img-fluid" src="img/051.jpg" alt="">
+        <img class="b-lazy img-fluid" src="img/loading.gif" data-src="img/051.jpg" alt="">
         </div>
       </div>
     </div>
@@ -190,31 +190,31 @@
     </div>
     <div class="row no-gutters text-center">
       <div class="col-lg-4 col-sm-6">
-        <img class="b-lazy img-fluid" src="img/003.jpg" alt="">
+      <img class="b-lazy img-fluid" src="img/loading.gif" data-src="img/003.jpg" alt="">
       </div>
       <div class="col-lg-4 col-sm-6">
-        <img class="b-lazy img-fluid" src="img/065.jpg" alt="">
+      <img class="b-lazy img-fluid" src="img/loading.gif" data-src="img/065.jpg" alt="">
       </div>
       <div class="col-lg-4 col-sm-6">
-        <img class="b-lazy img-fluid" src="img/007.jpg" alt="">
+      <img class="b-lazy img-fluid" src="img/loading.gif" data-src="img/007.jpg" alt="">
       </div>
       <div class="col-lg-4 col-sm-6">
-        <img class="b-lazy img-fluid" src="img/080.jpg" alt="">
+      <img class="b-lazy img-fluid" src="img/loading.gif" data-src="img/080.jpg" alt="">
       </div>
       <div class="col-lg-4 col-sm-6">
-        <img class="b-lazy img-fluid" src="img/086.jpg" alt="">
+      <img class="b-lazy img-fluid" src="img/loading.gif" data-src="img/086.jpg" alt="">
       </div>
       <div class="col-lg-4 col-sm-6">
-        <img class="b-lazy img-fluid" src="img/087.jpg" alt="">
+      <img class="b-lazy img-fluid" src="img/loading.gif" data-src="img/087.jpg" alt="">
       </div>
       <div class="col-lg-4 col-sm-6">
-        <img class="b-lazy img-fluid" src="img/043.jpg" alt="">
+      <img class="b-lazy img-fluid" src="img/loading.gif" data-src="img/043.jpg" alt="">
       </div>
       <div class="col-lg-4 col-sm-6">
-        <img class="b-lazy img-fluid" src="img/069.jpg" alt="">
+      <img class="b-lazy img-fluid" src="img/loading.gif" data-src="img/069.jpg" alt="">
       </div>
       <div class="col-lg-4 col-sm-6">
-        <img class="b-lazy img-fluid" src="img/014.jpg" alt="">
+      <img class="b-lazy img-fluid" src="img/loading.gif" data-src="img/014.jpg" alt="">
       </div>
     </div>
   </div>
@@ -233,15 +233,18 @@
 
   <script src="js/blazy.min.js"></script>
   <script>
-    var bLazy = new Blazy({
-      breakpoints: [{
-        width: 420 // Max-width, src: 'data-src'}], success: function(element){
-          setTimeout(function(){
-          var parent = element.parentNode;
-          parent.className = parent.className.replace(/\bloading\b/,'');
-        }, 200);
-      }
-    });
+      var bLazy = new Blazy({
+        breakpoints: [{
+	    width: 420 // Max-width
+          , src: 'data-src'
+	}]
+      , success: function(element){
+	    setTimeout(function(){
+		var parent = element.parentNode;
+		parent.className = parent.className.replace(/\bloading\b/,'');
+	    }, 200);
+        }
+   });
   </script>
 </body>
 
