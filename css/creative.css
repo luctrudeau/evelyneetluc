@@ -9669,7 +9669,7 @@ a.light:hover {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.5) 0%, rgba(92, 77, 66, 0.5) 100%), url("../img/mariage.jpg") no-repeat center center fixed;
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.5) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/corona.jpg") no-repeat center center fixed;
 
   background-position: center;
   background-repeat: no-repeat;
@@ -9694,7 +9694,7 @@ header.masthead h1 {
 
   }
   header.masthead p {
-    font-size: 1.15rem;
+    font-size: 1.5rem;
   }
   header.masthead h1 {
     font-size: 3rem;
@@ -9709,7 +9709,7 @@ header.masthead h1 {
     padding-bottom: 0;
   }
   header.masthead p {
-    font-size: 1.15rem;
+    font-size: 1.75rem;
   }
   header.masthead h1 {
     font-size: 3rem;
